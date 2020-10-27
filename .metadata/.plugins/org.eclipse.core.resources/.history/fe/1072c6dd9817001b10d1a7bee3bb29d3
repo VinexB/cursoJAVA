@@ -1,0 +1,19 @@
+package integer;
+
+public class Integer {
+
+	public static void main(String[] args) {
+		
+		Integer x = 20;
+		
+		int obj = x;
+		
+		System.out.println(obj);
+		
+		int y = obj;
+		
+		System.out.println(y);
+		
+	}
+
+}

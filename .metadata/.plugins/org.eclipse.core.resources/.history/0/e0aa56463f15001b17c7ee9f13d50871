@@ -1,0 +1,32 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o número da conta: ");
+		int number = sc.nextInt();
+		System.out.print("Digite o nome do proprietário da conta: ");
+		sc.nextLine();
+		String holder = sc.nextLine();
+		System.out.print("Será efetuado deposito inicial? (s/n) ");
+		char response = sc.next().charAt(0);
+			if (response == 'y') {
+				System.out.print("Digite o valor do deposito inicial: ");
+				double initialDeposit = sc.nextDouble();
+			}
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}
